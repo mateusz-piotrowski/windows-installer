@@ -1,2 +1,5 @@
 9/7/2020
 - Add header
+9/8/2020
+- Add scoop
+- Add 7zip
