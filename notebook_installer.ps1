@@ -30,4 +30,8 @@ if (Get-Command scoop install git -errorAction SilentlyContinue) {
 
 write-output ""
 
+scoop update
+
+write-output ""
+
 read-host "Press ENTER to continue..."

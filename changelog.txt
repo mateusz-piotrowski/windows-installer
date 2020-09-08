@@ -4,3 +4,4 @@
 - Add scoop
 - Add 7zip
 - Add git
+- Add 'scoop update' command
