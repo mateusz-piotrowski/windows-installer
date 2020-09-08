@@ -3,3 +3,4 @@
 9/8/2020
 - Add scoop
 - Add 7zip
+- Add git

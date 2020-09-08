@@ -22,6 +22,12 @@ if (Get-Command scoop install 7zip -errorAction SilentlyContinue) {
   scoop install 7zip
 }
 
+if (Get-Command scoop install git -errorAction SilentlyContinue) {
+  "Git is already installed."
+} else {
+  scoop install git
+}
+
 write-output ""
 
 read-host "Press ENTER to continue..."
