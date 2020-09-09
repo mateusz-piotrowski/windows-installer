@@ -36,4 +36,12 @@ scoop update
 
 write-output ""
 
+if ($scoop_app_list -match 'auto-dark-mode') {
+  "Auto Dark Mode is already installed."
+} else {
+  scoop install auto-dark-mode-np
+}
+
+write-output ""
+
 read-host "Press ENTER to continue..."

@@ -1,5 +1,6 @@
 9/9/2020
 - Change the way to check is app installed
+- Add auto-dark-mode
 
 9/8/2020
 - Add scoop
