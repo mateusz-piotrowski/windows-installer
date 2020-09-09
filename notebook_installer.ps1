@@ -16,13 +16,15 @@ if (Get-Command scoop -errorAction SilentlyContinue) {
 
 write-output ""
 
-if (Get-Command scoop install 7zip -errorAction SilentlyContinue) {
+$scoop_app_list = scoop export
+
+if ($scoop_app_list -match '7zip') {
   "7zip is already installed."
 } else {
   scoop install 7zip
 }
 
-if (Get-Command scoop install git -errorAction SilentlyContinue) {
+if ($scoop_app_list -match 'git') {
   "Git is already installed."
 } else {
   scoop install git

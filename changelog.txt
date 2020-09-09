@@ -1,7 +1,12 @@
-9/7/2020
-- Add header
+9/9/2020
+- Change the way to check is app installed
+
 9/8/2020
 - Add scoop
 - Add 7zip
 - Add git
 - Add 'scoop update' command
+
+9/7/2020
+- Add header
+
