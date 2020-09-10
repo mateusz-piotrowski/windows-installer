@@ -18,13 +18,13 @@ write-output ""
 
 $scoop_app_list = scoop export
 
-if ($scoop_app_list -match '7zip') {
+if ($scoop_app_list -match "7zip") {
   "7zip is already installed."
 } else {
   scoop install 7zip
 }
 
-if ($scoop_app_list -match 'git') {
+if ($scoop_app_list -match "git") {
   "Git is already installed."
 } else {
   scoop install git
@@ -36,10 +36,16 @@ scoop update
 
 write-output ""
 
-if ($scoop_app_list -match 'auto-dark-mode') {
+if ($scoop_app_list -match "auto-dark-mode-np") {
   "Auto Dark Mode is already installed."
 } else {
   scoop install auto-dark-mode-np
+}
+
+if ($scoop_app_list -match "notepadplusplus") {
+  "Notepad Plus Plus is already installed."
+} else {
+  scoop install notepadplusplus
 }
 
 write-output ""
