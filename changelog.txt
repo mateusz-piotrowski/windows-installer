@@ -1,3 +1,6 @@
+9/11/2020
+- Fix issue with bucket adding
+
 9/10/2020
 - Add Notepad Plus Plus
 

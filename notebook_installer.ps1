@@ -10,7 +10,19 @@ if (Get-Command scoop -errorAction SilentlyContinue) {
   "Scoop is already installed."
 } else {
   Invoke-Expression (New-Object System.Net.WebClient).DownloadString('https://get.scoop.sh')
+}
+
+$scoop_buckets = scoop bucket list
+
+if ($scoop_buckets -match "extras") {
+  "Extras bucket is already added."
+} else {
   scoop bucket add extras
+}
+
+if ($scoop_buckets -match "nonportable") {
+  "Nonportable bucket is already added."
+} else {
   scoop bucket add nonportable
 }
 
