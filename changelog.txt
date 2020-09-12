@@ -2,6 +2,7 @@
 - Add Firefox
 - Add Powershell
 - Add Windows Terminal
+- Add Thunderbird
 
 9/12/2020
 - Add file association with Notepad Plus Plus

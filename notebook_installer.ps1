@@ -90,6 +90,12 @@ if ($scoop_app_list -match "windows-terminal") {
   scoop install windows-terminal
 }
 
+if ($scoop_app_list -match "thunderbird") {
+  "Thunderbird is already installed."
+} else {
+  scoop install thunderbird
+}
+
 write-output ""
 
 read-host "Press ENTER to continue..."
