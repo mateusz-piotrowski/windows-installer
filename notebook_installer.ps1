@@ -72,4 +72,12 @@ if($?) {
 
 write-output ""
 
+if ($scoop_app_list -match "firefox") {
+  "Firefox is already installed."
+} else {
+  scoop install firefox
+}
+
+write-output ""
+
 read-host "Press ENTER to continue..."

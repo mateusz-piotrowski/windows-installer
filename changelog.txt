@@ -1,4 +1,7 @@
-9/11/2020
+9/13/2020
+- Add Firefox
+
+9/12/2020
 - Add file association with Notepad Plus Plus
 
 9/11/2020
