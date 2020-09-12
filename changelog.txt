@@ -1,4 +1,7 @@
 9/11/2020
+- Add file association with Notepad Plus Plus
+
+9/11/2020
 - Fix issue with bucket adding
 
 9/10/2020
