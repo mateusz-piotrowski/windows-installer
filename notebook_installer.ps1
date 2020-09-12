@@ -84,6 +84,12 @@ if ($scoop_app_list -match "pwsh") {
   scoop install pwsh
 }
 
+if ($scoop_app_list -match "windows-terminal") {
+  "Windows Terminal is already installed."
+} else {
+  scoop install windows-terminal
+}
+
 write-output ""
 
 read-host "Press ENTER to continue..."

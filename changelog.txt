@@ -1,6 +1,7 @@
 9/13/2020
 - Add Firefox
 - Add Powershell
+- Add Windows Terminal
 
 9/12/2020
 - Add file association with Notepad Plus Plus
