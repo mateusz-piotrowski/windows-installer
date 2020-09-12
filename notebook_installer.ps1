@@ -78,6 +78,12 @@ if ($scoop_app_list -match "firefox") {
   scoop install firefox
 }
 
+if ($scoop_app_list -match "pwsh") {
+  "Powershell is already installed."
+} else {
+  scoop install pwsh
+}
+
 write-output ""
 
 read-host "Press ENTER to continue..."
