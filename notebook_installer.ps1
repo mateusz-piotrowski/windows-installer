@@ -96,6 +96,12 @@ if ($scoop_app_list -match "thunderbird") {
   scoop install thunderbird
 }
 
+if ($scoop_app_list -match "concfg") {
+  "Concfg is already installed."
+} else {
+  scoop install concfg
+}
+
 write-output ""
 
 read-host "Press ENTER to continue..."
