@@ -4,6 +4,7 @@
 - Add Windows Terminal
 - Add Thunderbird
 - Add Concfg
+- Import concfg preset
 
 9/12/2020
 - Add file association with Notepad Plus Plus

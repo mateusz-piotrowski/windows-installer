@@ -100,6 +100,7 @@ if ($scoop_app_list -match "concfg") {
   "Concfg is already installed."
 } else {
   scoop install concfg
+  concfg import solarized small
 }
 
 write-output ""
