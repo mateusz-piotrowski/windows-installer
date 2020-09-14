@@ -103,6 +103,12 @@ if ($scoop_app_list -match "concfg") {
   concfg import solarized small
 }
 
+if ($scoop_app_list -match "basecamp") {
+  "Basecamp is already installed."
+} else {
+  scoop install basecamp
+}
+
 ""
 
 read-host "Press ENTER to continue..."
