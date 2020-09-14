@@ -62,7 +62,7 @@ if ($scoop_app_list -match "notepadplusplus") {
 
 ""
 
-Start-Process powershell -ArgumentList "-file .\file_associations_launcher.ps1"
+Start-Process powershell -ArgumentList "-file .\file_associations_launcher.ps1" -Wait
 
 if($?) {
   "File association has been completed successfully."
