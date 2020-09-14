@@ -1,10 +1,10 @@
-write-output ""
+""
 
-write-output "# ----------------------"
-write-output "# The Notebook Installer"
-write-output "# ----------------------"
+"# ----------------------"
+"# The Notebook Installer"
+"# ----------------------"
 
-write-output ""
+""
 
 if (Get-Command scoop -errorAction SilentlyContinue) {
   "Scoop is already installed."
@@ -26,7 +26,7 @@ if ($scoop_buckets -match "nonportable") {
   scoop bucket add nonportable
 }
 
-write-output ""
+""
 
 $scoop_app_list = scoop export
 
@@ -42,11 +42,11 @@ if ($scoop_app_list -match "git") {
   scoop install git
 }
 
-write-output ""
+""
 
 scoop update
 
-write-output ""
+""
 
 if ($scoop_app_list -match "auto-dark-mode-np") {
   "Auto Dark Mode is already installed."
@@ -60,7 +60,7 @@ if ($scoop_app_list -match "notepadplusplus") {
   scoop install notepadplusplus
 }
 
-write-output ""
+""
 
 Start-Process powershell -ArgumentList "-file .\file_associations_launcher.ps1"
 
@@ -70,7 +70,7 @@ if($?) {
   "An error occoured during file association."
 }
 
-write-output ""
+""
 
 if ($scoop_app_list -match "firefox") {
   "Firefox is already installed."
@@ -103,6 +103,6 @@ if ($scoop_app_list -match "concfg") {
   concfg import solarized small
 }
 
-write-output ""
+""
 
 read-host "Press ENTER to continue..."
