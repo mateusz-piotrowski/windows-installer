@@ -109,6 +109,12 @@ if ($scoop_app_list -match "basecamp") {
   scoop install basecamp
 }
 
+if ($scoop_app_list -match "pshazz") {
+  "PsHazz is already installed."
+} else {
+  scoop install pshazz
+}
+
 ""
 
 read-host "Press ENTER to continue..."

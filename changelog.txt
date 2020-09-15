@@ -1,3 +1,6 @@
+9/15/2020
+- Add PsHazz
+
 9/14/2020
 - Remove 'write-output' command
 - Add Basecamp
