@@ -122,6 +122,12 @@ if ($scoop_app_list -match "pshazz") {
   scoop install pshazz
 }
 
+if ($scoop_app_list -match "notepads-np") {
+  "Notepads is already installed."
+} else {
+  Start-Process -FilePath "powershell" -Verb RunAs -ArgumentList "scoop install notepads-np" -Wait
+}
+
 ""
 
 read-host "Press ENTER to continue..."
