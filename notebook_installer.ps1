@@ -128,6 +128,12 @@ if ($scoop_app_list -match "notepads-np") {
   Start-Process -FilePath "powershell" -Verb RunAs -ArgumentList "scoop install notepads-np" -Wait
 }
 
+if ($scoop_app_list -match "vscode") {
+  "Visual Studio Code is already installed."
+} else {
+  scoop install vscode
+}
+
 ""
 
 read-host "Press ENTER to continue..."

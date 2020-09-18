@@ -1,6 +1,7 @@
 9/15/2020
 - Remove unneeded "file_associations_launcher.ps1" file
 - Add Notepads
+- Add Visual Studio Code
 
 9/15/2020
 - Add PsHazz
