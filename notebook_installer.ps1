@@ -62,12 +62,19 @@ if ($scoop_app_list -match "notepadplusplus") {
 
 ""
 
-Start-Process powershell -ArgumentList "-file .\file_associations_launcher.ps1" -Wait
+$user_name = $env:UserName
+
+$argument_list1 =  "-file C:\Users\"
+$argument_list2 = "\Programming\Projects\notebook-installer\file_associations.ps1"
+
+$argument_list = $argument_list1 + $user_name + $argument_list2
+
+Start-Process powershell -verb runas -ArgumentList $argument_list -Wait
 
 if($?) {
-  "File association has been completed successfully."
+  "File associations has been completed successfully."
 } else {
-  "An error occoured during file association."
+  "An error occoured during file associations."
 }
 
 ""

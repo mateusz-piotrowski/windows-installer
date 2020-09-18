@@ -1,4 +1,7 @@
 9/15/2020
+- Remove unneeded "file_associations_launcher.ps1" file
+
+9/15/2020
 - Add PsHazz
 
 9/14/2020
