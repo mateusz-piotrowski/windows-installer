@@ -120,6 +120,7 @@ if ($scoop_app_list -match "pshazz") {
   "PsHazz is already installed."
 } else {
   scoop install pshazz
+  Start-Process -FilePath "powershell" -Verb RunAs -ArgumentList "Set-Service ssh-agent -StartupType Manual" -Wait
 }
 
 if ($scoop_app_list -match "notepads-np") {
