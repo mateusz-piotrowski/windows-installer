@@ -1,7 +1,7 @@
 9/19/2020
 - Add command to start 'ssh-agent'
 
-9/15/2020
+9/18/2020
 - Remove unneeded "file_associations_launcher.ps1" file
 - Add Notepads
 - Add Visual Studio Code
