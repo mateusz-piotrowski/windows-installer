@@ -1,5 +1,6 @@
 9/20/2020
 - Enable 'Windows Subsystem for Linux' feature
+- Replace 'powershell.exe' for 'pwsh.exe'
 
 9/19/2020
 - Add command to start 'ssh-agent'

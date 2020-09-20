@@ -62,14 +62,7 @@ if ($scoop_app_list -match "notepadplusplus") {
 
 ""
 
-$user_name = $env:UserName
-
-$argument_list1 =  "-file C:\Users\"
-$argument_list2 = "\Programming\Projects\notebook-installer\file_associations.ps1"
-
-$argument_list = $argument_list1 + $user_name + $argument_list2
-
-Start-Process powershell -verb runas -ArgumentList $argument_list -Wait
+Start-Process "pwsh.exe" -Argument '.\file_associations.ps1' -Verb RunAs -Wait
 
 if($?) {
   "File associations has been completed successfully."
@@ -120,13 +113,13 @@ if ($scoop_app_list -match "pshazz") {
   "PsHazz is already installed."
 } else {
   scoop install pshazz
-  Start-Process -FilePath "powershell" -Verb RunAs -ArgumentList "Set-Service ssh-agent -StartupType Manual" -Wait
+  Start-Process "pwsh.exe" -Argument 'Set-Service ssh-agent -StartupType Manual' -Verb RunAs -Wait
 }
 
 if ($scoop_app_list -match "notepads-np") {
   "Notepads is already installed."
 } else {
-  Start-Process -FilePath "powershell" -Verb RunAs -ArgumentList "scoop install notepads-np" -Wait
+  Start-Process "pwsh.exe" -Argument 'scoop install notepads-np' -Verb RunAs -Wait
 }
 
 if ($scoop_app_list -match "vscode") {
@@ -137,13 +130,9 @@ if ($scoop_app_list -match "vscode") {
 
 ""
 
-"# WSL 2 Setup"
+Start-Process "pwsh.exe" -Argument '.\wsl2_setup.ps1' -Verb RunAs -Wait
 
-""
-
-"Enable 'Windows Subsystem for Linux' feature"
-
-Start-Process -FilePath "powershell" -Verb RunAs -ArgumentList "dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart" -Wait
+"WSL 2 has been setup successfully."
 
 ""
 
