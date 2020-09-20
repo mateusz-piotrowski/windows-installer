@@ -1,3 +1,6 @@
+9/20/2020
+- Enable 'Windows Subsystem for Linux' feature
+
 9/19/2020
 - Add command to start 'ssh-agent'
 - Update date in changelog file

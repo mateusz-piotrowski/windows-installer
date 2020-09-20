@@ -137,4 +137,14 @@ if ($scoop_app_list -match "vscode") {
 
 ""
 
+"# WSL 2 Setup"
+
+""
+
+"Enable 'Windows Subsystem for Linux' feature"
+
+Start-Process -FilePath "powershell" -Verb RunAs -ArgumentList "dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart" -Wait
+
+""
+
 read-host "Press ENTER to continue..."
