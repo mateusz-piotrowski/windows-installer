@@ -128,6 +128,12 @@ if ($scoop_app_list -match "vscode") {
   scoop install vscode
 }
 
+if ($scoop_app_list -match "latex") {
+  "MiKTeX is already installed."
+} else {
+  scoop install latex
+}
+
 ""
 
 Start-Process "pwsh.exe" -Argument '.\wsl2_setup.ps1' -Verb RunAs -Wait
