@@ -26,3 +26,5 @@ foreach ($ext in $exts){
 # see also:
 # * https://superuser.com/q/406985/8271
 # * https://gist.github.com/timabell/608fb680bfc920f372ac
+
+read-host "Press ENTER to continue..."
