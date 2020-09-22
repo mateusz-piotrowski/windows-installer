@@ -48,6 +48,12 @@ scoop update
 
 ""
 
+if ($scoop_app_list -match "vim") {
+  "Vim is already installed."
+} else {
+  scoop install vim
+}
+
 if ($scoop_app_list -match "auto-dark-mode-np") {
   "Auto Dark Mode is already installed."
 } else {

@@ -6,6 +6,7 @@
 
 - Perl app
 - CHANGELOG.md file
+- Vim app
 
 **Deprecated :**
 - changelog.txt file
