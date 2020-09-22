@@ -10,6 +10,9 @@
 **Deprecated :**
 - changelog.txt file
 
+**Removed :**
+- MiKTeX app
+
 ## [0.0.13] (September 21 2020)
 
 **Added :**
