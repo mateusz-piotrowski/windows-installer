@@ -1,3 +1,6 @@
+9/22/2020
+- Add Perl
+
 9/21/2020
 - Add MiKTeX
 - Set 'WSL 2' as default version

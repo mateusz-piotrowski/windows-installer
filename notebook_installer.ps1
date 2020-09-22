@@ -128,6 +128,12 @@ if ($scoop_app_list -match "vscode") {
   scoop install vscode
 }
 
+if ($scoop_app_list -match "perl") {
+  "Perl is already installed."
+} else {
+  scoop install perl
+}
+
 if ($scoop_app_list -match "latex") {
   "MiKTeX is already installed."
 } else {
