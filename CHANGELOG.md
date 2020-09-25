@@ -1,5 +1,15 @@
 # Change Log
 
+## [0.0.15] (September 25 2020)
+
+**Added :**
+
+- Neovim app
+
+**Removed :**
+
+- changelog.txt file
+
 ## [0.0.14] (September 22 2020)
 
 **Added :**
@@ -9,9 +19,11 @@
 - Vim app
 
 **Deprecated :**
+
 - changelog.txt file
 
 **Removed :**
+
 - MiKTeX app
 
 ## [0.0.13] (September 21 2020)
@@ -29,6 +41,7 @@
 - 'Virtual Machine Platform' feature
 
 **Changed :**
+
 - 'powershell.exe' to 'pwsh.exe'
 
 ## [0.0.11] (September 19 2020)
@@ -38,6 +51,7 @@
 - Command to start 'ssh-agent'
 
 **Fixed :**
+
 - Date in changelog.txt file
 
 ## [0.0.10] (September 18 2020)
@@ -48,6 +62,7 @@
 - Visual Studio Code app
 
 **Removed :**
+
 - Unneeded "file_associations_launcher.ps1" file
 
 ## [0.0.9] (September 15 2020)

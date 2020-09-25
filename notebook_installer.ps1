@@ -44,7 +44,7 @@ if ($scoop_app_list -match "git") {
 
 ""
 
-scoop update
+scoop update --quiet
 
 ""
 
@@ -53,6 +53,13 @@ if ($scoop_app_list -match "vim") {
 } else {
   scoop install vim
 }
+
+if ($scoop_app_list -match "neovim") {
+  "Neovim is already installed."
+} else {
+  scoop install neovim
+}
+
 
 if ($scoop_app_list -match "auto-dark-mode-np") {
   "Auto Dark Mode is already installed."
