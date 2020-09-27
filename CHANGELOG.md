@@ -1,11 +1,15 @@
 # Change Log
 
-## [0.0.15] (September 27 2020)
+## [0.0.16] (September 27 2020)
 
 **Added :**
 
 - Signal app
 - Emacs app
+
+**Fixed :**
+
+- Issue during Scoop's buckets adding
 
 ## [0.0.15] (September 25 2020)
 

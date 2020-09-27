@@ -12,6 +12,26 @@ if (Get-Command scoop -errorAction SilentlyContinue) {
   Invoke-Expression (New-Object System.Net.WebClient).DownloadString('https://get.scoop.sh')
 }
 
+""
+
+$scoop_app_list = scoop export
+
+""
+
+if ($scoop_app_list -match "7zip") {
+  "7zip is already installed."
+} else {
+  scoop install 7zip
+}
+
+if ($scoop_app_list -match "git") {
+  "Git is already installed."
+} else {
+  scoop install git
+}
+
+""
+
 $scoop_buckets = scoop bucket list
 
 if ($scoop_buckets -match "extras") {
@@ -24,22 +44,6 @@ if ($scoop_buckets -match "nonportable") {
   "Nonportable bucket is already added."
 } else {
   scoop bucket add nonportable
-}
-
-""
-
-$scoop_app_list = scoop export
-
-if ($scoop_app_list -match "7zip") {
-  "7zip is already installed."
-} else {
-  scoop install 7zip
-}
-
-if ($scoop_app_list -match "git") {
-  "Git is already installed."
-} else {
-  scoop install git
 }
 
 ""
@@ -157,6 +161,10 @@ if ($scoop_app_list -match "signal") {
 } else {
   scoop install signal
 }
+
+""
+
+"WSL 2 setup started..."
 
 ""
 
