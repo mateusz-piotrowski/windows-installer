@@ -5,6 +5,7 @@
 **Added :**
 
 - Signal app
+- Emacs app
 
 ## [0.0.15] (September 25 2020)
 

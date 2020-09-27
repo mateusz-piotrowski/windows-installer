@@ -60,6 +60,17 @@ if ($scoop_app_list -match "neovim") {
   scoop install neovim
 }
 
+if ($scoop_app_list -match "vscode") {
+  "Visual Studio Code is already installed."
+} else {
+  scoop install vscode
+}
+
+if ($scoop_app_list -match "emacs") {
+  "Emacs is already installed."
+} else {
+  scoop install emacs
+}
 
 if ($scoop_app_list -match "auto-dark-mode-np") {
   "Auto Dark Mode is already installed."
@@ -133,12 +144,6 @@ if ($scoop_app_list -match "notepads-np") {
   "Notepads is already installed."
 } else {
   Start-Process "pwsh.exe" -Argument 'scoop install notepads-np' -Verb RunAs -Wait
-}
-
-if ($scoop_app_list -match "vscode") {
-  "Visual Studio Code is already installed."
-} else {
-  scoop install vscode
 }
 
 if ($scoop_app_list -match "perl") {
