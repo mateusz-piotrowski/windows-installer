@@ -1,5 +1,11 @@
 # Change Log
 
+## [0.0.17] (September 28 2020)
+
+**Added :**
+
+- Add Java bucket to Scoop
+
 ## [0.0.16] (September 27 2020)
 
 **Added :**

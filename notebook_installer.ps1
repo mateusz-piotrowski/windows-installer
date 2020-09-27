@@ -46,6 +46,12 @@ if ($scoop_buckets -match "nonportable") {
   scoop bucket add nonportable
 }
 
+if ($scoop_buckets -match "java") {
+  "Java bucket is already added."
+} else {
+  scoop bucket add java
+}
+
 ""
 
 scoop update --quiet
