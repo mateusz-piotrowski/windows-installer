@@ -11,6 +11,7 @@
 **Updated :**
 
 - README.md file (Add Requirements section)
+- README.md file (Add Installation section)
 
 **Fixed :**
 
