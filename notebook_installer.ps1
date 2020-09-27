@@ -147,6 +147,12 @@ if ($scoop_app_list -match "perl") {
   scoop install perl
 }
 
+if ($scoop_app_list -match "signal") {
+  "Signal is already installed."
+} else {
+  scoop install signal
+}
+
 ""
 
 Start-Process "pwsh.exe" -Argument '.\wsl2_setup.ps1' -Verb RunAs -Wait

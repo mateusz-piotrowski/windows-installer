@@ -1,5 +1,11 @@
 # Change Log
 
+## [0.0.15] (September 27 2020)
+
+**Added :**
+
+- Signal app
+
 ## [0.0.15] (September 25 2020)
 
 **Added :**
