@@ -8,6 +8,10 @@
 - Emacs app
 - Setup starter file
 
+**Updated :**
+
+- README.md file (Add Requirements section)
+
 **Fixed :**
 
 - Issue during Scoop's buckets adding
