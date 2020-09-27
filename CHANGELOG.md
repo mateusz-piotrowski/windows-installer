@@ -5,6 +5,7 @@
 **Added :**
 
 - Add Java bucket to Scoop
+- Add Java OpenJDK suite
 
 ## [0.0.16] (September 27 2020)
 

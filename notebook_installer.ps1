@@ -12,8 +12,6 @@ if (Get-Command scoop -errorAction SilentlyContinue) {
   Invoke-Expression (New-Object System.Net.WebClient).DownloadString('https://get.scoop.sh')
 }
 
-""
-
 $scoop_app_list = scoop export
 
 ""
@@ -118,6 +116,20 @@ if ($scoop_app_list -match "pwsh") {
   scoop install pwsh
 }
 
+if ($scoop_app_list -match "concfg") {
+  "Concfg is already installed."
+} else {
+  scoop install concfg
+  concfg import solarized small
+}
+
+if ($scoop_app_list -match "pshazz") {
+  "PsHazz is already installed."
+} else {
+  scoop install pshazz
+  Start-Process "pwsh.exe" -Argument 'Set-Service ssh-agent -StartupType Manual' -Verb RunAs -Wait
+}
+
 if ($scoop_app_list -match "windows-terminal") {
   "Windows Terminal is already installed."
 } else {
@@ -130,24 +142,10 @@ if ($scoop_app_list -match "thunderbird") {
   scoop install thunderbird
 }
 
-if ($scoop_app_list -match "concfg") {
-  "Concfg is already installed."
-} else {
-  scoop install concfg
-  concfg import solarized small
-}
-
 if ($scoop_app_list -match "basecamp") {
   "Basecamp is already installed."
 } else {
   scoop install basecamp
-}
-
-if ($scoop_app_list -match "pshazz") {
-  "PsHazz is already installed."
-} else {
-  scoop install pshazz
-  Start-Process "pwsh.exe" -Argument 'Set-Service ssh-agent -StartupType Manual' -Verb RunAs -Wait
 }
 
 if ($scoop_app_list -match "notepads-np") {
@@ -156,16 +154,22 @@ if ($scoop_app_list -match "notepads-np") {
   Start-Process "pwsh.exe" -Argument 'scoop install notepads-np' -Verb RunAs -Wait
 }
 
+if ($scoop_app_list -match "signal") {
+  "Signal is already installed."
+} else {
+  scoop install signal
+}
+
 if ($scoop_app_list -match "perl") {
   "Perl is already installed."
 } else {
   scoop install perl
 }
 
-if ($scoop_app_list -match "signal") {
-  "Signal is already installed."
+if ($scoop_app_list -match "openjdk") {
+  "OpenJDK is already installed."
 } else {
-  scoop install signal
+  scoop install openjdk
 }
 
 ""
