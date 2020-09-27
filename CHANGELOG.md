@@ -6,6 +6,7 @@
 
 - Signal app
 - Emacs app
+- Setup starter file
 
 **Fixed :**
 
