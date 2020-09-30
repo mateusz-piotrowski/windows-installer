@@ -6,6 +6,12 @@
 
 - Spacemacs app
 
+**Deprecated :**
+
+- Notepads app
+- Concfg app
+- Concfg theme import
+
 ## [0.0.17] (September 28 2020)
 
 **Added :**
