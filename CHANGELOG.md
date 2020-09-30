@@ -1,5 +1,11 @@
 # Change Log
 
+## [0.0.19] (September 30 2020)
+
+**Added :**
+
+- Spacemacs app
+
 ## [0.0.17] (September 28 2020)
 
 **Added :**

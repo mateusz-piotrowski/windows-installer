@@ -78,6 +78,7 @@ if ($scoop_app_list -match "emacs") {
   "Emacs is already installed."
 } else {
   scoop install emacs
+  git clone -b develop https://github.com/syl20bnr/spacemacs .emacs.d
 }
 
 if ($scoop_app_list -match "auto-dark-mode-np") {
