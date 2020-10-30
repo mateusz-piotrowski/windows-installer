@@ -117,13 +117,6 @@ if ($scoop_app_list -match "pwsh") {
   scoop install pwsh
 }
 
-if ($scoop_app_list -match "concfg") {
-  "Concfg is already installed."
-} else {
-  scoop install concfg
-  concfg import solarized small
-}
-
 if ($scoop_app_list -match "pshazz") {
   "PsHazz is already installed."
 } else {
@@ -147,12 +140,6 @@ if ($scoop_app_list -match "basecamp") {
   "Basecamp is already installed."
 } else {
   scoop install basecamp
-}
-
-if ($scoop_app_list -match "notepads-np") {
-  "Notepads is already installed."
-} else {
-  Start-Process "pwsh.exe" -Argument 'scoop install notepads-np' -Verb RunAs -Wait
 }
 
 if ($scoop_app_list -match "signal") {

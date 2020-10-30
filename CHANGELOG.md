@@ -1,5 +1,10 @@
 # Change Log
 
+## [0.0.20] (October 30 2020)
+
+**Removed :**
+- Deprecated app: Notepads, Concfg
+
 ## [0.0.19] (September 30 2020)
 
 **Added :**
