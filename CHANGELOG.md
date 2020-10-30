@@ -2,6 +2,10 @@
 
 ## [0.0.20] (October 30 2020)
 
+**Updated :**
+
+- setup_starter.ps1 file (Add new logic)
+
 **Removed :**
 - Deprecated app: Notepads, Concfg
 
