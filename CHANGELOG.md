@@ -1,5 +1,11 @@
 # Change Log
 
+## [0.0.21] (April 03 2022)
+
+**Updated :**
+
+- README.md file - the project name
+
 ## [0.0.20] (October 30 2020)
 
 **Updated :**
@@ -7,6 +13,7 @@
 - setup_starter.ps1 file (Add new logic)
 
 **Removed :**
+
 - Deprecated app: Notepads, Concfg
 
 ## [0.0.19] (September 30 2020)
