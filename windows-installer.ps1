@@ -126,3 +126,18 @@ if ($scoop_app_list -match "windows-terminal") {
 
 # - - - - - - - - - - - - -
 
+if ($scoop_app_list -match "notepadplusplus") {
+  "Notepad++ is already installed."
+} else {
+  "Installing Notepad++..."
+  scoop install notepadplusplus
+}
+
+# Notes
+# -----
+# Add Notepad++ as a context menu option by running: reg import
+# "C:\Users\Mateusz\scoop\apps\notepadplusplus\current\install-context.reg"
+
+""
+
+# - - - - - - - - - - - - -
