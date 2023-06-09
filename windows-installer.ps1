@@ -142,6 +142,17 @@ if ($scoop_app_list -match "notepadplusplus") {
 
 # - - - - - - - - - - - - -
 
+if ($scoop_app_list -match "bitwarden") {
+  "Bitwarden is already installed."
+} else {
+  "Installing Bitwarden..."
+  scoop install bitwarden
+}
+
+""
+
+# - - - - - - - - - - - - -
+
 if ($scoop_app_list -match "googlechrome") {
   "Google Chrome is already installed."
 } else {
