@@ -141,3 +141,14 @@ if ($scoop_app_list -match "notepadplusplus") {
 ""
 
 # - - - - - - - - - - - - -
+
+if ($scoop_app_list -match "googlechrome") {
+  "Google Chrome is already installed."
+} else {
+  "Installing Google Chrome..."
+  scoop install googlechrome
+}
+
+""
+
+# - - - - - - - - - - - - -
