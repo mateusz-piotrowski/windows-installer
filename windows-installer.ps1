@@ -200,3 +200,25 @@ if ($scoop_app_list -match "firefox") {
 ""
 
 # - - - - - - - - - - - - -
+
+if ($scoop_buckets -match "nonportable") {
+  "Nonportable bucket is already added."
+} else {
+  "Adding Scoop Nonportable bucket..."
+  scoop bucket add nonportable
+}
+
+""
+
+# - - - - - - - - - - - - -
+
+if ($scoop_app_list -match "devtoys-np") {
+  "DevToys is already installed."
+} else {
+  "Installing devtoys-np..."
+  scoop install devtoys-np
+}
+
+""
+
+# - - - - - - - - - - - - -
