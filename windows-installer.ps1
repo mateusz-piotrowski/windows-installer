@@ -163,3 +163,21 @@ if ($scoop_app_list -match "googlechrome") {
 ""
 
 # - - - - - - - - - - - - -
+
+if ($scoop_app_list -match "thunderbird") {
+  "Thunderbird is already installed."
+} else {
+  "Installing Thunderbird..."
+  scoop install thunderbird
+}
+
+# Notes
+# -----
+# To set profile 'Scoop' as *DEFAULT*, or profiles/settings was lost after update:
+# - Run 'Thunderbird Profile Manager', choose 'Scoop' then click 'Start Thunderbird'.
+# - Visit 'about:profiles' page in Thunderbird to check *DEFAULT* profile.
+# For details: https://support.mozilla.org/en-US/kb/profile-manager-create-and-remove-thunderbird-profiles
+
+""
+
+# - - - - - - - - - - - - -
