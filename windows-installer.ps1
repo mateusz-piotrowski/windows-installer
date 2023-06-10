@@ -181,3 +181,22 @@ if ($scoop_app_list -match "thunderbird") {
 ""
 
 # - - - - - - - - - - - - -
+
+if ($scoop_app_list -match "firefox") {
+  "Firefox is already installed."
+} else {
+  "Installing Firefox..."
+  scoop install firefox
+}
+
+# Notes
+# -----
+# To set profile 'Scoop' as *DEFAULT*, or profiles/settings was lost after update:
+# - Run 'Firefox Profile Manager', choose 'Scoop' then click 'Start Firefox'.
+# - Visit 'about:profiles' page in Firefox to check *DEFAULT* profile.
+# For details: https://support.mozilla.org/en-US/kb/profile-manager-create-remove-switch-firefox-profiles
+# 
+
+""
+
+# - - - - - - - - - - - - -
