@@ -6,6 +6,17 @@
 
 ""
 
+$Continue = Read-Host "Continue? [Y/N]"
+
+if ($Continue -eq "N")
+{
+    "Exiting..."
+    ""
+    exit
+}
+
+""
+
 # - - - - - - - - - - - - -
 
 if (Get-Command scoop -errorAction SilentlyContinue) {
