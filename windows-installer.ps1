@@ -4,6 +4,8 @@
 "# The Windows Installer"
 "# ----------------------"
 
+# System colors:  Black, DarkBlue, DarkGreen, DarkCyan, DarkRed, DarkMagenta, DarkYellow, Gray, DarkGray,
+# | Blue, Green, Cyan, Red, Magenta, Yellow, White"
 ""
 
 $Continue = Read-Host "Continue? [Y/N]"
@@ -229,6 +231,19 @@ if ($scoop_app_list -match "devtoys-np") {
   "Installing devtoys-np..."
   scoop install devtoys-np
 }
+
+""
+
+# - - - - - - - - - - - - -
+
+# if ($scoop_app_list -match "github") {
+#   Write-Host "GitHub Desktop is already installed." -ForegroundColor green
+# } else {
+#   Write-Host "GitHub Desktop not found." -ForegroundColor red
+#   Write-Host "Installing GitHub Desktop..." -ForegroundColor darkyellow
+#   scoop install github
+# }
+
 
 ""
 
