@@ -243,7 +243,26 @@ if ($scoop_app_list -match "devtoys-np") {
 #   Write-Host "Installing GitHub Desktop..." -ForegroundColor darkyellow
 #   scoop install github
 # }
+#
+#
+#""
 
+# - - - - - - - - - - - - -
+
+if ($scoop_app_list -match "vscode") {
+  Write-Host "Visual Studio Code is already installed." -ForegroundColor green
+} else {
+  Write-Host "Visual Studio Code not found." -ForegroundColor red
+  Write-Host "Installing Visual Studio Code..." -ForegroundColor darkyellow
+  scoop install vscode
+}
+
+# Notes
+# -----
+# Add Visual Studio Code as a context menu option by running:
+# 'reg import "C:\Users\Mateusz\scoop\apps\vscode\current\install-context.reg"'
+# For file associations, run:
+# 'reg import "C:\Users\Mateusz\scoop\apps\vscode\current\install-associations.reg"'
 
 ""
 
