@@ -236,16 +236,16 @@ if ($scoop_app_list -match "devtoys-np") {
 
 # - - - - - - - - - - - - -
 
-# if ($scoop_app_list -match "github") {
-#   Write-Host "GitHub Desktop is already installed." -ForegroundColor green
-# } else {
-#   Write-Host "GitHub Desktop not found." -ForegroundColor red
-#   Write-Host "Installing GitHub Desktop..." -ForegroundColor darkyellow
-#   scoop install github
-# }
-#
-#
-#""
+ if ($scoop_app_list -match "github") {
+   Write-Host "GitHub Desktop is already installed." -ForegroundColor green
+ } else {
+   Write-Host "GitHub Desktop not found." -ForegroundColor red
+   Write-Host "Installing GitHub Desktop..." -ForegroundColor darkyellow
+   scoop install github
+ }
+
+
+""
 
 # - - - - - - - - - - - - -
 
