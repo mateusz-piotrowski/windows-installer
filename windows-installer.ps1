@@ -8,3 +8,14 @@ Write-Host "# ----------------------"  -ForegroundColor DarkCyan
 # | Blue, Green, Cyan, Red, Magenta, Yellow, White"
 
 ""
+
+$Continue = Read-Host "Continue? [Y/N]"
+
+if ($Continue -eq "N") {
+    ""
+    Write-Host "Exiting..."
+    ""
+    exit
+}
+
+""
