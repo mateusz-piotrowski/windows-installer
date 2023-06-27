@@ -53,3 +53,15 @@ if ($winget_list -match "Microsoft.PowerShell") {
 ""
 
 # - - - - - - - - - - - - -
+
+if ($winget_list -match "Git.Git") {
+  Write-Host "Git is already installed." -ForegroundColor DarkGreen
+} else {
+  Write-Host "Git not found" | -ForegroundColor DarkRed
+  Write-Host "Installing Git ..." -ForegroundColor DarkYellow
+  winget install Git.Git
+}
+
+""
+
+# - - - - - - - - - - - - -
