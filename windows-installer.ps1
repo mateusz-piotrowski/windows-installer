@@ -27,3 +27,17 @@ winget update
 $winget_list = winget list
 
 ""
+
+# - - - - - - - - - - - - -
+
+if ($winget_list -match "Microsoft.WindowsTerminal") {
+  Write-Host "Windows Terminal is already installed." -ForegroundColor DarkGreen
+} else {
+  Write-Host "Windows Terminal not found." | -ForegroundColor DarkRed
+  Write-Host "Installing Windows Terminal ..." -ForegroundColor DarkYellow
+  winget install Microsoft.WindowsTerminal
+}
+
+""
+
+# - - - - - - - - - - - - -
