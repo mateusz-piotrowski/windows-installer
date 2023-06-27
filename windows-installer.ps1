@@ -65,3 +65,16 @@ if ($winget_list -match "Git.Git") {
 ""
 
 # - - - - - - - - - - - - -
+
+
+if ($winget_list -match "Google.Chrome") {
+  Write-Host "Google Chrome is already installed." -ForegroundColor DarkGreen
+} else {
+  Write-Host "Google Chrome not found" | -ForegroundColor DarkRed
+  Write-Host "Installing Google Chrome ..." -ForegroundColor DarkYellow
+  winget install Google.Chrome
+}
+
+""
+
+# - - - - - - - - - - - - -
