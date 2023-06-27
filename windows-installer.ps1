@@ -66,13 +66,24 @@ if ($winget_list -match "Git.Git") {
 
 # - - - - - - - - - - - - -
 
-
 if ($winget_list -match "Google.Chrome") {
   Write-Host "Google Chrome is already installed." -ForegroundColor DarkGreen
 } else {
   Write-Host "Google Chrome app not found" -ForegroundColor DarkRed
   Write-Host "Installing Google Chrome ..." -ForegroundColor DarkYellow
   winget install Google.Chrome
+}
+
+""
+
+# - - - - - - - - - - - - -
+
+if ($winget_list -match "Bitwarden.Bitwarden") {
+  Write-Host "Bitwarden is already installed." -ForegroundColor DarkGreen
+} else {
+  Write-Host "Bitwarden app not found" -ForegroundColor DarkRed
+  Write-Host "Installing Bitwarden ..." -ForegroundColor DarkYellow
+  winget install Bitwarden.Bitwarden
 }
 
 ""
