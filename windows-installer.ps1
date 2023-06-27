@@ -41,3 +41,15 @@ if ($winget_list -match "Microsoft.WindowsTerminal") {
 ""
 
 # - - - - - - - - - - - - -
+
+if ($winget_list -match "Microsoft.PowerShell") {
+  Write-Host "Microsoft PowerShell is already installed." -ForegroundColor DarkGreen
+} else {
+  Write-Host "Microsoft PowerShell not found." | -ForegroundColor DarkRed 
+  Write-Host "Installing Microsoft PowerShell ..." -ForegroundColor DarkYellow
+  winget install Microsoft.PowerShell
+}
+
+""
+
+# - - - - - - - - - - - - -
