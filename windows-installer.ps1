@@ -19,3 +19,11 @@ if ($Continue -eq "N") {
 }
 
 ""
+
+Write-Host "Updating winget ..."
+
+winget update
+
+$winget_list = winget list
+
+""
