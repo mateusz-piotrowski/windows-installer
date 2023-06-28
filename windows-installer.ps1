@@ -101,3 +101,15 @@ if ($winget_list -match "Notepad\+\+.Notepad\+\+") {
 ""
 
 # - - - - - - - - - - - - -
+
+if ($winget_list -match "Microsoft.VisualStudioCode") {
+  Write-Host "Visual Studio Code is already installed." -ForegroundColor DarkGreen
+} else {
+  Write-Host "Visual Studio Code app not found" -ForegroundColor DarkRed
+  Write-Host "Installing Visual Studio Code ..." -ForegroundColor DarkYellow
+  winget install Microsoft.VisualStudioCode
+}
+
+""
+
+# - - - - - - - - - - - - -
