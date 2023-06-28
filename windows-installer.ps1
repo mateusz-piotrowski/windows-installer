@@ -113,3 +113,15 @@ if ($winget_list -match "Microsoft.VisualStudioCode") {
 ""
 
 # - - - - - - - - - - - - -
+
+if ($winget_list -match "Mozilla.Firefox") {
+  Write-Host "Mozilla Firefox is already installed." -ForegroundColor DarkGreen
+} else {
+  Write-Host "Mozilla Firefox app not found" -ForegroundColor DarkRed
+  Write-Host "Installing Mozilla Firefox ..." -ForegroundColor DarkYellow
+  winget install Mozilla.Firefox
+}
+
+""
+
+# - - - - - - - - - - - - -
