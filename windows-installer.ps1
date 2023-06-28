@@ -89,3 +89,15 @@ if ($winget_list -match "Bitwarden.Bitwarden") {
 ""
 
 # - - - - - - - - - - - - -
+
+if ($winget_list -match "Notepad\+\+.Notepad\+\+") {
+  Write-Host "Notepad++ is already installed." -ForegroundColor DarkGreen
+} else {
+  Write-Host "Notepad++ app not found" -ForegroundColor DarkRed
+  Write-Host "Installing Notepad++ ..." -ForegroundColor DarkYellow
+  winget install Notepad++.Notepad++
+}
+
+""
+
+# - - - - - - - - - - - - -
