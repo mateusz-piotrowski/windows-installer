@@ -125,3 +125,15 @@ if ($winget_list -match "Mozilla.Firefox") {
 ""
 
 # - - - - - - - - - - - - -
+
+if ($winget_list -match "Mozilla.Thunderbird") {
+  Write-Host "Mozilla Thunderbird is already installed." -ForegroundColor DarkGreen
+} else {
+  Write-Host "Mozilla Thunderbird app not found" -ForegroundColor DarkRed
+  Write-Host "Installing Mozilla Thunderbird ..." -ForegroundColor DarkYellow
+  winget install Mozilla.Thunderbird
+}
+
+""
+
+# - - - - - - - - - - - - -
