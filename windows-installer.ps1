@@ -66,6 +66,18 @@ if ($winget_list -match "CrystalDewWorld.CrystalDiskInfo") {
 
 # - - - - - - - - - - - - -
 
+if ($winget_list -match "CrystalDewWorld.CrystalDiskMark") {
+  Write-Host "CrystalDiskMark is already installed." -ForegroundColor DarkGreen
+} else {
+  Write-Host "CrystalDiskMark app not found" -ForegroundColor DarkRed
+  Write-Host "Installing CrystalDiskMark ..." -ForegroundColor DarkYellow
+  winget install CrystalDewWorld.CrystalDiskMark
+}
+
+""
+
+# - - - - - - - - - - - - -
+
 if ($winget_list -match "Git.Git") {
   Write-Host "Git is already installed." -ForegroundColor DarkGreen
 } else {
