@@ -54,6 +54,18 @@ if ($winget_list -match "Microsoft.PowerShell") {
 
 # - - - - - - - - - - - - -
 
+if ($winget_list -match "CrystalDewWorld.CrystalDiskInfo") {
+  Write-Host "CrystalDiskInfo is already installed." -ForegroundColor DarkGreen
+} else {
+  Write-Host "CrystalDiskInfo app not found" -ForegroundColor DarkRed
+  Write-Host "Installing CrystalDiskInfo ..." -ForegroundColor DarkYellow
+  winget install CrystalDewWorld.CrystalDiskInfo
+}
+
+""
+
+# - - - - - - - - - - - - -
+
 if ($winget_list -match "Git.Git") {
   Write-Host "Git is already installed." -ForegroundColor DarkGreen
 } else {
