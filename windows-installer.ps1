@@ -1,4 +1,4 @@
-""
+	""
 
 Write-Host "# ----------------------"  -ForegroundColor DarkCyan
 Write-Host "# The Windows Installer"   -ForegroundColor DarkCyan
@@ -20,13 +20,21 @@ if ($Continue -eq "N") {
 
 ""
 
-Write-Host "Updating winget ..."
+$UpdatePackages = Read-Host "Update winget packages? [Y/N]"
 
-winget update
+if ($UpdatePackages -eq "N") {
+	""
+    Write-Host "Continue without update..."
+    ""
+} else {
+	""
+	Write-Host "Updating winget packages..."
+	""
+	winget update
+	""
+}
 
 $winget_list = winget list
-
-""
 
 # - - - - - - - - - - - - -
 
@@ -48,6 +56,18 @@ if ($winget_list -match "Microsoft.PowerShell") {
   Write-Host "Microsoft PowerShell app not found." -ForegroundColor DarkRed
   Write-Host "Installing Microsoft PowerShell ..." -ForegroundColor DarkYellow
   winget install Microsoft.PowerShell
+}
+
+""
+
+# - - - - - - - - - - - - -
+
+if ($winget_list -match "7zip.7zip") {
+  Write-Host "7-Zip is already installed." -ForegroundColor DarkGreen
+} else {
+  Write-Host "7-Zip app not found." -ForegroundColor DarkRed
+  Write-Host "Installing 7-Zip ..." -ForegroundColor DarkYellow
+  winget install 7zip.7zip
 }
 
 ""
