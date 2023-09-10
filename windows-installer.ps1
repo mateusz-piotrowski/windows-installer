@@ -1,4 +1,4 @@
-	""
+""
 
 Write-Host "# ----------------------"  -ForegroundColor DarkCyan
 Write-Host "# The Windows Installer"   -ForegroundColor DarkCyan
@@ -176,6 +176,18 @@ if ($winget_list -match "Mozilla.Thunderbird") {
   Write-Host "Mozilla Thunderbird app not found" -ForegroundColor DarkRed
   Write-Host "Installing Mozilla Thunderbird ..." -ForegroundColor DarkYellow
   winget install Mozilla.Thunderbird
+}
+
+""
+
+# - - - - - - - - - - - - -
+
+if ($winget_list -match "GNU.MidnightCommander") {
+  Write-Host "Midnight Commander is already installed." -ForegroundColor DarkGreen
+} else {
+  Write-Host "Midnight Commander app not found." -ForegroundColor DarkRed
+  Write-Host "Installing Midnight Commander ..." -ForegroundColor DarkYellow
+  winget install GNU.MidnightCommander
 }
 
 ""
