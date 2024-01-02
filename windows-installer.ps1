@@ -109,6 +109,17 @@ if ($winget_list -match "Git.Git") {
 ""
 
 # - - - - - - - - - - - - -
+if ($winget_list -match "GitHub.cli") {
+  Write-Host "GitHub CLI is already installed." -ForegroundColor DarkGreen
+} else {
+  Write-Host "GitHub CLI app not found" -ForegroundColor DarkRed
+  Write-Host "Installing GitHub CLI ..." -ForegroundColor DarkYellow
+  winget install GitHub.cli
+}
+
+""
+
+# - - - - - - - - - - - - -
 
 if ($winget_list -match "Google.Chrome") {
   Write-Host "Google Chrome is already installed." -ForegroundColor DarkGreen
